@@ -60,6 +60,9 @@
                     init();
                 });
             }
+            that.focus(function () {
+                document.activeElement.blur();
+            });
 
             function init() { //初始化函数
                 initVal = that.val();
